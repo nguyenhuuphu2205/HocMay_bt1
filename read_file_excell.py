@@ -10,7 +10,7 @@ class ReadFileCSV:
         with open(self.filename,'r') as csvfile:
             reader=csv.DictReader(csvfile)
             for row in reader:
-                temp=[1,]
+                temp=[]
                 temp.append(float(row['lcavol']))
                 temp.append(float(row['lweight']))
                 temp.append(float(row['age']))
